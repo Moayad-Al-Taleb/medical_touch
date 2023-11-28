@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap");
+:root {
+  --primary-color: #50b3ba;
+  --primary-color-2: #e0f7f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", sans-serif !important;
+}
+.container {
+  padding: 16px;
+  background-color: white;
+  max-height: 100vh;
+
+  min-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chat-header {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  gap: 8px;
+}
+.chat-name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.chat-report-btn {
+  background-color: rgb(233, 116, 116);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14.5px;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(116, 233, 132);
+  border-radius: 50%;
+}
+.offline {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(233, 116, 116);
+  border-radius: 50%;
+}
+.chat-body {
+  flex: 3;
+  max-height: 600px;
+  overflow-y: auto;
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.send-message {
+  width: fit-content;
+  max-width: 80%;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #212529;
+  color: white;
+  align-self: flex-start;
+}
+.recieve-message {
+  padding: 8px 16px;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 400;
+  max-width: 80%;
+  border-radius: 8px;
+  background-color: white;
+  align-self: flex-end;
+}
+.chat-footer form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: start;
+}
+input {
+  border: none;
+  padding: 12px 12px;
+  outline: none;
+  border-radius: 8px;
+}
+.input-field {
+  width: 90%;
+}
+.submit-btn {
+  width: 10%;
+  background-color: rgb(116, 233, 132);
+  color: white;
+}
